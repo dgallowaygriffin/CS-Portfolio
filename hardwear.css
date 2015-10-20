@@ -1,0 +1,20 @@
+body {
+    background-color: gray;
+}
+
+title {
+    background-color:blue;
+    color: red;
+}
+
+#header-1 {
+    color: yellow;
+}
+
+.para-1 {
+    color:white;
+    font-family: Vernanda, sans-serif;
+}
+#strong-1 {
+    background-color: red;
+}

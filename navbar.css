@@ -11,11 +11,16 @@
 
 #navbar li{
     display:inline-block;
-    border:2px solid black;
+    border:3px solid black;
+    border-color: white;
 }
 
 #navbar a{
-    
+    background-color: red;
+    color: pink;
+}
+#navbar li:hover {
+    background-color: white;
 }
 </style>
     </body>

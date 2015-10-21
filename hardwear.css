@@ -18,3 +18,8 @@ title {
 #strong-1 {
     background-color: red;
 }
+p {
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+}

@@ -1,4 +1,4 @@
-h1 {
+#welcome {
 color:violet;
 }
 
@@ -10,11 +10,42 @@ font-family: helvetica, sans-serif;
 .p-1 {
 color: white;
 border: 3px solid #8B2E5F;
+width: 60%;
+height: 60px;
+overflow-y: hidden;
+overflow-x: auto;
+margin: 15px 0px 10px 6px;
 }
  .p-2 {
      color: white;
-     border: 2px invisible blue;
+     border: 2px solid blue;
+     width: 30%;
+     height: 100px;
+     overflow-y: hidden;
+     overflow-x: auto;
+     margin: 15px 0px 10px 6px;
  }
- h2 {
+ .liter {
      color: orange;
+     position: relative;
+ }
+ #smiley {
+  position:relative;
+  left: 33em;
+ }
+ #books {
+  position: absolute;
+  border: 2px ridge orange;
+ }
+ #intro {
+  color: pink;
+ }
+ #reading {
+  position: absolute;
+ }
+ #intro-smiley {
+  text-align: center;
+ }
+ #liter-book {
+  text-align: center;
  }

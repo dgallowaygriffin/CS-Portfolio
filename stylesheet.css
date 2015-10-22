@@ -31,7 +31,8 @@ margin: 15px 0px 10px 6px;
  }
  #smiley {
   position:relative;
-  left: 33em;
+  left: 25em;
+  bottom: 10em;
  }
  #books {
   position: absolute;
@@ -48,4 +49,74 @@ margin: 15px 0px 10px 6px;
  }
  #liter-book {
   text-align: center;
+ }
+ .liter {
+  position: absolute;
+  bottom: 10em;
+ }
+ #books {
+  position: absolute;
+  bottom: .5em;
+  left:  500px;
+ }
+ #comp {
+  position: relative;
+  text-align: right;
+  right: 100px;
+  top: 3em;
+  color: brown;
+ }
+ 
+ #open-book {
+  position: absolute;
+  bottom: .5em;
+  left: 52em;
+  border: 2px ridge brown;
+ }
+ .comp-sci {
+  position: absolute;
+  top: 48em;
+  border: 2px ridge yellow;
+  color: white;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 15px 0px 10px 6px;
+ }
+ #comp-pic {
+  position: absolute;
+  left: 64em;
+  top: 48em;
+  border: 2px ridge red;
+  margin: 15px 0px 10px 6px;
+ }
+ 
+ h2 {
+  text-decoration: underline;
+ }
+ 
+ #karuta {
+  position:relative;
+  top: 13em;
+  color: turquoise;
+ }
+ .karuta-para {
+  position: absolute;
+  top: 65em;
+  border: 2px solid white;
+  color: white;
+ }
+ #karuta-pic {
+  position: absolute;
+  top: 65em;
+  left: 54em;
+  border: 2px ridge navy;
+  margin: 15px 0px 10px 6px;
+ }
+ #thanks {
+  text-decoration: underline;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  color: purple;
+  
  }

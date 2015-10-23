@@ -1,0 +1,111 @@
+body {
+    background-color: gray;
+}
+
+title {
+    background-color:blue;
+    color: red;
+}
+
+#header-1 {
+    color: yellow;
+}
+
+.para-1 {
+    color:white;
+    font-family: Vernanda, sans-serif;
+    text-align: center;
+    border: 3px solid turquoise;
+    font-size: 18px;
+}
+#strong-1 {
+    background-color: red;
+}
+#html {
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+}
+#navbar li{
+    display:inline-block;
+    border:2px solid black;
+    border-color: white;
+}
+
+#navbar a{
+    background-color: red;
+    color: pink;
+    display:inline-block;
+    border:2px solid black;
+    border-color: white;
+}
+h2 {
+    color: blue;
+}
+
+#navbar a{
+    background-color: red;
+    color: pink;
+    }
+   
+    #navbar li:hover {
+    background-color: white;
+}
+.html-para {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.css-para {
+    color: white;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+#css {
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+}
+span {
+    background-color: blue;
+}
+#css-pic-1 {
+    position: static;
+    border: 2px ridge blue;
+}
+#css-pic-2 {
+    position: absolute;
+    right: 5em;
+    border: 2px ridge teal;
+}
+#html-pic-1 {
+    position: relative;
+    left: 3em;
+    border: 2px ridge black;
+}
+#html-pic-2 {
+    position: relative;
+    left: 15em;
+    border: 2px ridge brown;
+}
+#thanks {
+  text-decoration: underline;
+  top: 2em;
+  position: relative;
+  color: gold;
+  left: 1em;
+  text-align: center;
+}
+.end {
+    color: white;
+    top: 3em;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+}
+a:hover {
+    background-color: green;
+}

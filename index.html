@@ -1,54 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-         <link rel="stylesheet" href="stylesheet.css" type="text/css" />
-        <link rel="stylesheet" href="navbar.css" type="text/css" />
-        <title> Welcome To My Webpage </title>
-    </head>
-    <body>
-
-<h1 id="welcome">Welcome!</h1>
-<ul id="navbar">
-    <li> <a href="index.html">Home</a> </li>
-     <li> <a href="HTMLCSS.html">HTML/CSS</a> </li>
-</ul>
-<h1 id="intro">An intro</h1>
-<div id="intro-smiley"><p class="p-1">Here you will learn about me,<strong> Divyne</strong>, the author of this webpage.
-I will go in depth about my passions and interests, one of which is computer science. This page is 
-just the beginning of the great things to come from me, so I hope you decide to stick around.
- </p>
-<img id="smiley" src="http://cliparts.co/cliparts/pc5/8xr/pc58xreEi.gif" alt="happy smiling face" width="250">
-</div>
-<div id="liter-book"><h2 class="liter">Literature</h2>
+<option>Revert To Original</option>
+      </select>
+      <div id="mode-wrapper">Select which mode you would like to play in.<br /><button id="Easy">Easy</button><br /><button id="Medium">Medium</button><br /><button id="Difficult">Difficult</button></div>
+ <button id="high-score">Get your current high score for this game.</button>
+  <script>
+  function getTheme () {
+      function changeTheme (Theme) {
+         document.getElementById('style').setAttribute('href', Theme);
+     }
+     var index = document.getElementById("select").selectedIndex;
+     switch (index) {
+         case 0: 
+           changeTheme('css/dark-snake.css');
+           break;
+           case 1: changeTheme('css/main-snake.css');
+     }
+ }
+ if (navigator.onLine && window.location.hostname === 'patorjk.com') {
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-3312460-1']);
+     _gaq.push(['_trackPageview']);
  
- <p class="p-2">Surprisingly enough, an interest of mine is a school subject, which is literature.
- Writing and reading stories have always been a lot of fun to me. I especially love descriptive poetic works,
- which can take you to places that you could never be otherwise.</p>
- <img id="books" src="http://library.nrhtx.com/images/pages/N168/Books%20and%20Literature.png" alt="books stacked on top of one another" width="300">
- <img id="open-book" src="http://img.wonderhowto.com/img/74/02/63518298911604/0/literature-for-aspiring-hacker.1280x600.jpg" alt="open book susceptible to reading" width="500">
-</div>
-
-<h2 id="comp">Computer Science</h2>
-
-<div class="comp-sci"><p>At first, I didn't think much of computer science.
-It never crossed my mind that I might get the oppurtunity to 
-partake in a class like this.<br> I have come to endlessly enjoy computer science
-and everything it offers, especially with computers being so prevalent nowadays.</p></div>
-<img id="comp-pic" src="http://southcoastal.lib.de.us/files/2014/08/computers.jpg" alt="skethc-line computer" width="200">
-
-<h2 id="karuta">Karuta</h2>
-
-<p class="karuta-para">Karuta is a japanese card game that was first introduced to me 
-through an anime called <strong>"Chihayafuru".</strong><br> It's something that really 
-caught my attention and still does to this day.<br> Although I don't 
-play myself, I do find it fun to memorize all of the poems involved
-with the game.</p>
-<img id="karuta-pic" src="https://deluscar.files.wordpress.com/2013/06/horriblesubs-chihayafuru-s2-12-720p-mkv_snapshot_10-43_2013-06-13_22-12-34.jpg" alt="karuta card formation placed on tatami mat" width="350">
-
-<h1 id="thanks">THANK YOU!!</h1>
-
-<p class="end">This is the end of the about page. I hope you enjoyed
-my page! I put a lot of work into it! You
-can check out my HTML/CSS page  <a href="HTMLCSS.html">here.</a></p>
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+ }
+ </script>
+ </head>
+ <body>
+     <div id="game-area" tabindex="0">
+     </div>
+     <script type="text/javascript" src="./js/snake.js"></script>
+     <script type="text/javascript">
+     var mySnakeBoard = new SNAKE.Board(  {
+                                             boardContainer: "game-area",
+                                             fullScreen: true
+                                         });    
+     </script>
  </body>
-</html>
+ </html>

@@ -1,0 +1,130 @@
+body{
+    background-color: brown;
+}
+
+#p1{
+    color: white;
+    font-size: 20px;
+    border: 3px ridge white;
+}
+
+#title{
+    color: white;
+}
+
+#end{
+    color: white;
+    font-size: 25px;
+    border: 3px ridge white;
+    position: absolute;
+    top: 2000px;
+}
+
+#heroes{
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    z-index: -1;
+    border: 3px ridge black;
+}
+
+#map{
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    z-index: -1;
+    border: 3px ridge black;
+}
+
+#chest{
+    position: absolute;
+    top: 670px;
+    left: 1050px;
+    z-index: -1;
+    border: 3px ridge black;
+}
+
+#juice{
+    position: absolute;
+    top: 980px;
+    left: 1050px;
+    z-index: -1;
+}
+
+#sword{
+    position: absolute;
+    top: 1310px;
+    left: 1080px;
+    z-index: -1;
+    border: 3px ridge black;
+}
+
+#compass{
+    position: absolute;
+    top: 1565px;
+    left: 1080px;
+    z-index: -1;
+    border: 3px ridge black;
+}
+
+#eliwood{
+    position: absolute;
+    top: 1850px;
+    left: 750px;
+    z-index: -1;
+    border: 3px ridge black;
+    background-color: white;
+}
+
+#lyn{
+    position: absolute;
+    top: 1850px;
+    left: 500px;
+    z-index: -1;
+    border: 3px ridge black;
+}
+
+#hector{
+    position: absolute;
+    top: 1850px;
+    left: 250px;
+    z-index: -1;
+    border: 3px ridge black;
+}
+
+#code{
+    position: absolute;
+    top: 550px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+    border: 3px ridge white;
+}
+
+#mines{
+    position: absolute;
+    color: white;
+    top: 690px;
+    left: 100px;
+}
+
+#taverns{
+    position: absolute;
+    color: white;
+    top: 970px;
+    left: 60px;
+}
+
+#attack{
+    position: absolute;
+    color: white;
+    top: 1320px;
+    left: 60px;
+}
+
+#direction{
+    position: absolute;
+    color: white;
+    top: 1570px;
+    left: 60px;
+}

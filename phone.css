@@ -1,0 +1,132 @@
+p {
+    color: black;
+    background-color: white;
+    position: absolute;
+    font-size: 30px;
+    top: 100px;
+    left: 30px;
+    z-index: 1;
+    border: 3px solid black;
+}
+
+#phone {
+    position: absolute;
+    left: 20em;
+    top: 1px;
+}
+
+#myform{
+    color: blue;
+    position: absolute;
+    left:12em;
+    z-index: 1;
+}
+
+#mytext{
+    color: blue;
+}
+
+.clickables{
+    border: 2px red;
+    position: absolute;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+#OneBtn{
+    width: 30px;
+    height: 20px;
+    top: 448px;
+    left: 560px;
+}
+
+#TwoBtn{
+    width: 35px;
+    height: 20px;
+    top: 450px;
+    left: 600px;
+    border-radius: 80px;
+}
+
+#ThreeBtn{
+    width: 25px;
+    height: 20px;
+    top: 445px;
+    left: 650px;
+}
+
+#FourBtn{
+    width: 25px;
+    height: 20px;
+    top: 475px;
+    left: 565px;
+}
+
+#FiveBtn{
+    width: 35px;
+    height: 20px;
+    top: 480px;
+    left: 600px;
+}
+
+#SixBtn{
+    width: 25px;
+    height: 20px;
+    top: 475px;
+    left: 650px;
+}
+
+#SevBtn{
+    width: 30px;
+    height: 20px;
+    top: 500px;
+    left: 563px;
+}
+
+#EightBtn{
+    width: 35px;
+    height: 20px;
+    top: 505px;
+    left: 600px;
+}
+
+#NineBtn{
+    width: 25px;
+    height: 20px;
+    top: 500px;
+    left: 650px;
+}
+
+#AstBtn{
+    width: 30px;
+    height: 20px;
+    top: 523px;
+    left: 565px;
+}
+
+#ZeroBtn{
+    width: 30px;
+    height: 20px;
+    top: 525px;
+    left: 603px;
+}
+
+#PouBtn{
+    width: 35px; 
+    height: 20px;
+    top: 525px;
+    left: 640px;
+}
+
+#numInfo{
+    position: absolute;
+    width: 120px;
+    height: 145px;
+    top: 75px;
+    left: 560px;
+    border: 2px orange;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}

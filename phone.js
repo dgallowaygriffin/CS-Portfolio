@@ -1,4 +1,6 @@
 // JavaScript File xdfgh
+// This code block numbers all of the buttons I'm using 
+// for display
 
 var OneBtn = document.getElementById("OneBtn");
 
@@ -25,6 +27,10 @@ var ZeroBtn = document.getElementById("ZeroBtn");
 var PouBtn = document.getElementById("PouBtn");
 
 var numInfo = document.getElementById("numInfo");
+
+// This is the code block which connects the divs with the 
+// ability to let users click on the image and have a certain
+// thing play out
 
 OneBtn.addEventListener("click", function(){
   numInfo.innerHTML = "1";

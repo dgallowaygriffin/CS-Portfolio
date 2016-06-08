@@ -1,3 +1,4 @@
+// this part of the code grabs the information from the elements and returns them with the specific value into the code
 var troye = document.getElementById("troye");
 var fe = document.getElementById("fe");
 var poke = document.getElementById("poke");
@@ -7,6 +8,8 @@ var info1 = document.getElementById("info1");
 var info2 = document.getElementById("info2");
 var info3 = document.getElementById("info3");
 
+// this code means that when you click on the image, the function will take place
+// in this case, words will pop up when the user click on the image
 troye.addEventListener("click", function(){
     info1.innerHTML = "Troye was born in South Africa and moved to Australia young";
     info2.innerHTML = "His first internet debut was on Youtube with singing videos";

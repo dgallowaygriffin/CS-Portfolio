@@ -7,6 +7,7 @@ var dropdown = document.getElementById("dropdown");
 
 button.addEventListener("click", doMath);
 // By using "dropdown" and also using "if", I am able to add more equations like division and subtraction into the calculator.
+// I learned how to do this from W3 schools
 function doMath() {
     if  (dropdown.value === "+"){
         answer = parseInt(input1.value) + parseInt(input2.value)
@@ -33,3 +34,5 @@ function doMath() {
         display.innerHTML = answer;
     }
 }
+// The math.pow allows for exponential functions
+// The math.sqrt allows for finding the square root

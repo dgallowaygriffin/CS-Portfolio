@@ -66,6 +66,7 @@
             border: 3px dashed black;
         }
 	</style>
+	 <!--Used a style tag instead of stylesheet because it was more convenient-->
 </head>
 <body>
     <title>
@@ -78,7 +79,7 @@
     
     <p id="info">This calculator has six operations: addition, subtratction,
     multiplication, division, to the power of and to the root of.</p>
-    
+     <!--This code block allows for the operation signs to show up in the dropbox-->
 <input type ="text" name="input1" style="height:20px;" id="input1">
     <select id="dropdown">
         <option value="+">+</option>
@@ -90,10 +91,10 @@
     </select>
     <input type ="text" name="input2" style="height:20px;" id="input2">
     <input type="button" value="Calculate" id="submitButton" style="height:50px" />
-
+ <!--The &radic is special because it's doing something different when compared to the other operations-->
     <p id="answer">The answer is: <strong><span id="display"></span></strong></p>
 <script src="calc.js" ></script>
-
+ <!--The images used on the page-->
 <img id="plus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAP1BMVEX///8AAABhYWH5+fl/f3/v7++lpaXc3NyMjIzFxcV5eXmFhYWCgoKenp78/PwwMDCpqalaWlpkZGRTU1Pn5+eHpJw4AAAA5UlEQVR4nO3csU4CQQBFUUBAQQVU/v9bjZBQL8VmvJtz6inerWaqWa0AAAAAAAAAAAAAAAAAAACW7fp6M3rGjI7rm5fRO+azVZinsE9hn8I+hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPYp7BPYd/7vXD0jOftfjaTfJ/vhdNOb74uo8Medut5vI0Oe1CoUOF4cxV+jA57XvY+nGz5bxqFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+5ZfuPy/vg77P5+n0TsAAAAAAAAAAAAAAAAAAOB/+wX/zwf7ZM9WQAAAAABJRU5ErkJggg==" height="200">
 
 <img id="minus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACcCAMAAAC9ZjJ/AAAAVFBMVEX///8AAADa2toRERHX19fz8/P5+fmQkJDt7e19fX2YmJjl5eVhYWFnZ2dkZGQNDQ0UFBQlJSVwcHB3d3enp6cZGRkgICBCQkIzMzOFhYWWlpZcXFyc0v4BAAAAo0lEQVR4nO3V2w7BUBBAUbdSVKt15///0yUkiCJqEom1Msl53Zl5OK0WAAAAAAAAAAAAAAAAAPyjfpLeSh7oPxEZN6p2kyzPs0l2fqrhcHY1R5vBvdHFdp4Exu2K9geKg/I063FgXF5+EneVGRmXLZrFTUPjlj8c1/SssZtreNbuL5+1jIyr1kX3tfq4VRoYN+68o1erE/pFAAAAAAAAAADwLXtTIQn8m35KAwAAAABJRU5ErkJggg==" height="200">

@@ -2,19 +2,84 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>Document</title>
 	<style>
 	    body {
 	        background-color: red;
 	    }
-        p {
-            border: 2px solid;
+        h1{
+            color: white;
+        }
+        #info{
+            font-size: 25px;
+            border: 3px ridge white;
+        }
+        #input1{
+            position: absolute;
+            left: 350px;
+            top: 300px;
+        }
+        #dropdown{
+            position: absolute;
+            left: 600px;
+            top: 300px;
+        }
+        #input2{
+            position: absolute;
+            left: 700px;
+            top: 300px;
+        }
+        #submitButton{
+            position: absolute;
+            left: 585px;
+            top: 380px;
+        }
+        #display{
+            font-size: 25px;
+            top: 500px;
+        }
+        #answer{
+            font-size: 25px;
+            top: 500px;
+        }
+        #plus{
+            position: absolute;
+            left: 1100px;
+            top: 20px;
+            height: 200px;
+            border: 3px dashed black;
+        }
+        #minus{
+            position: absolute;
+            border: 3px dashed black;
+            top: 220px;
+        }
+        #multiply{
+            position: absolute;
+            top: 470px;
+            left: 300px;
+            border: 3px dashed black;
+        }
+        #divide{
+            position: absolute;
+            top: 470px;
+            left: 800px;
+            border: 3px dashed black;
         }
 	</style>
 </head>
 <body>
+    <title>
+        Calculator
+    </title>
     
-<input type ="text" name="input1" style="width:50px;" id="input1">
+    <h1>
+        <strong>Calculator</strong>
+    </h1>
+    
+    <p id="info">This calculator has six operations: addition, subtratction,
+    multiplication, division, to the power of and to the root of.</p>
+    
+<input type ="text" name="input1" style="height:20px;" id="input1">
     <select id="dropdown">
         <option value="+">+</option>
         <option value="-">-</option>
@@ -23,12 +88,19 @@
         <option value="^">^</option> 
         <option value="root">&radic;</option>
     </select>
-    <input type ="text" name="input2" style="width:50px;" id="input2">
-    <input type="button" value="Calculate" id="submitButton" />
+    <input type ="text" name="input2" style="height:20px;" id="input2">
+    <input type="button" value="Calculate" id="submitButton" style="height:50px" />
 
-    <p>The answer is: <span id="display"></span></p>
+    <p id="answer">The answer is: <strong><span id="display"></span></strong></p>
 <script src="calc.js" ></script>
 
+<img id="plus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAP1BMVEX///8AAABhYWH5+fl/f3/v7++lpaXc3NyMjIzFxcV5eXmFhYWCgoKenp78/PwwMDCpqalaWlpkZGRTU1Pn5+eHpJw4AAAA5UlEQVR4nO3csU4CQQBFUUBAQQVU/v9bjZBQL8VmvJtz6inerWaqWa0AAAAAAAAAAAAAAAAAAACW7fp6M3rGjI7rm5fRO+azVZinsE9hn8I+hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPYp7BPYd/7vXD0jOftfjaTfJ/vhdNOb74uo8Medut5vI0Oe1CoUOF4cxV+jA57XvY+nGz5bxqFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+5ZfuPy/vg77P5+n0TsAAAAAAAAAAAAAAAAAAOB/+wX/zwf7ZM9WQAAAAABJRU5ErkJggg==" height="200">
+
+<img id="minus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACcCAMAAAC9ZjJ/AAAAVFBMVEX///8AAADa2toRERHX19fz8/P5+fmQkJDt7e19fX2YmJjl5eVhYWFnZ2dkZGQNDQ0UFBQlJSVwcHB3d3enp6cZGRkgICBCQkIzMzOFhYWWlpZcXFyc0v4BAAAAo0lEQVR4nO3V2w7BUBBAUbdSVKt15///0yUkiCJqEom1Msl53Zl5OK0WAAAAAAAAAAAAAAAAAPyjfpLeSh7oPxEZN6p2kyzPs0l2fqrhcHY1R5vBvdHFdp4Exu2K9geKg/I063FgXF5+EneVGRmXLZrFTUPjlj8c1/SssZtreNbuL5+1jIyr1kX3tfq4VRoYN+68o1erE/pFAAAAAAAAAADwLXtTIQn8m35KAwAAAABJRU5ErkJggg==" height="200">
+
+<img id="multiply" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAAAZlBMVEX///8AAAD7+/tubm7r6+t+fn6hoaGWlpYGBgZbW1s/Pz8VFRX09PSmpqbl5eWdnZ2xsbHd3d12dnZoaGgqKip9fX2FhYViYmKMjIxKSkrX19dERERxcXFgYGBQUFAvLy82NjYYGBi3VAw7AAACsklEQVR4nO2a0XKbMBREERF1Wyu0QI1dx3aa///JBlzFWiOMlBmu1Jk97xp21gcBVy4KQgghhBBCCCGEEEIIIYQQQgghhBBCCCH/B2Ups+az6P45eo05bOQSdmr7JXZNq1S/RpaZayn1M25NP6zZrJPnDtOpkZgOTXtd0wv8yvZaahvuoan+rVGH9RN29loRHrYfa9b3sFcOgR5W7pr4+z+S7+7VQjo0J3fFee18hf7mXC7AQ7Nz87UCd0kNCRc7hP5as36+9w7hV17wEPrrpJ4lwR6aJ8gnFC/cQ9O6+XaCbwuBHkJ/OxH/LEEeQn9Pgv2NLHpoOsgnHG/ZQw39VdL9FYseQn+VqH+Whx5CfxLPDy+zHmror00Ub95DDfuLxFvqHH4Pyz3kS+Kfxedhiftzwv5GJh7qM+RLHG/qIfj3VeAbZBHw8O0Z7t9DUv8s4OEW7o/U0SzgYYb50MObf6ljOdSehJss/LPoya+cU38jLxBvm12+4ggBLxnsfwg+f9WbzKQtHHz+Dqw+g4lC7+/zSU0rw9CT/oZ98EfqWB+Unv6GhLl0WJ68+bLxEL8/Tn9y81BDf1VxdHfsHDycfP9iwuQdeuYvx1/5eOifv2hImLJDMzN/Of7OxEPYn935CyZM1iHMn3H+12TgIc6f7+d/JrmHeP4xnf81qT3E/dnz/ZHYQzh/88+fm9d0HuL529z82UBCyQ4N9Dc/f64viTzE/fnB928DCcU6hDPjx+cfdQIP8fm2dP5Rir8fGuhv+fxD3MNg/yzCHh7C/bPU8CtH/t8mGvddL/j8zUn4sma4kdszNvz87TY/3AvM5OwzNub8zc4P93q9XDeu73px57/X+eFFaKY5vOtFn/++J7ysEcZLc4k/P9LnTnAmXH/iWlrEP0IIIYQQQgghhBBCCJHjL29IGIKX4LCLAAAAAElFTkSuQmCC" height="200">
+
+<img id="divide" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAABhYWHv7+/39/fc3Nzy8vLf39+enp6BgYE/Pz/4+Phzc3Pt7e2zs7MmJiaNjY3l5eVPT09ERETU1NQxMTErKysPDw9WVlaPj4/FxcU2NjbOzs6oqKi8vLywsLAxNVKTAAABMElEQVR4nO3aV1ICQRQFUBqQKGlEkmn/u9QSweafV69sz1nBvTXTsbrXAwAAAAAAAAAAAAAAAAAAAACAfKfl8pSdIdB8Wr4ds4NEGe3Kj26YnSXGrFz1s7OEmJTKMjtNhJe64SE7TYBxuTHKznN/D7cNB9l57q/9hot9XXDV4nrRrxtOs9NEuPlNN9lpQrz9FnzPzhLk41Kw3c334Phcymwyz84BAABAiNGhH6LLLnY1KEGyi11pqKGG+RbNNwQAAOC+XtePj+ttdoo446fzwbZbZCcJUj37avPRV32bs2ry0dC0voGZZKcJMFzVDWfZcQJ45/33tf8N2x+H7c+lvVFVcNfkeliNxH2r27ZNdy54aHCaudh+nS2ODZ8tAAAAAAAAAAAAAAAAAAAAAIB/4xN5AQiznNjLcgAAAABJRU5ErkJggg==" height="200">
 </body>
 </html>
 
